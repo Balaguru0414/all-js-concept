@@ -531,10 +531,30 @@
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // async
 
-// // setTimeout
-// // clearTimeout
-// // setInterval
-// // clearInterval
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  // setTimeout  & clearTimeout
+
+  // const delay = () => {
+  //   console.log('delayed content');
+  // };
+  // const setTime = setTimeout(delay, 2000);
+
+  // const stop = () => {
+  //   clearTimeout(setTime);
+  // };
+
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  // setInterval  & clearInterval
+
+  // let no = 0;
+  // const delay = () => {
+  //   console.log(`delayed content : ${no++}`);
+  // };
+  // const setTime = setInterval(delay, 2000);
+
+  // const stop = () => {
+  //   clearInterval(setTime);
+  // };
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // API
