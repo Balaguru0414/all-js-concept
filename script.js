@@ -379,6 +379,31 @@
 
 // // Adding new properties to the object
 // person.nationality = "USA";
+
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // optional Chaning
+const hotel = {
+  openHours: {
+    mon: {
+      open: "9.00 am",
+      close: "8.30 pm",
+    },
+    fri: {
+      open: "10.00 am",
+      close: "7.30 pm",
+    },
+  },
+};
+
+// 1
+if (hotel.openHours.wed) {
+  console.log(hotel.openHours.wed.open);
+} else {
+  console.log(hotel.openHours.wed);
+}
+// 2
+console.log(hotel.openHours.wed?.open);
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Dates
 
