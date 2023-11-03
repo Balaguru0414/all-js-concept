@@ -108,6 +108,19 @@
 //   num++;
 // } while (num < 5);
 
+/////////////////////////////////////////////////////////////////
+
+// let count = 0;
+// while (count > 5) {
+//   console.log(count)
+//   count++;
+// };
+
+// do{
+//   console.log(count)
+//   count++
+// } while(count > 5)
+//////////////////////////////////////////////////////////
 // // Using for loop
 // for (let i = 0; i < 5; i++) {
 //   console.log("Index:", i);
