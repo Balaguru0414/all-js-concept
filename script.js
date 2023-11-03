@@ -147,6 +147,13 @@
 // console.log(subtract(10, 3)); // Outputs: 7
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // Creating an array
+// let fruits = ["apple", "banana", "orange", "grape"];
+
+// // Accessing elements by index
+// console.log(fruits[0]); // Outputs: "apple"
+// console.log(fruits[2]); // Outputs: "orange"
+
 
 // DOM
 // Get elements by ID
