@@ -51,6 +51,33 @@
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // conditional statements
 // // Using if, else if, and else statements
+
+// let examScore = 75;
+
+// if (examScore >= 90) {
+//     console.log("Grade: A");
+// }
+
+// // Example of if-else statement
+// if (examScore >= 90) {
+//     console.log("Grade: A");
+// } else {
+//     console.log("Grade: B or below");
+// }
+
+// // Example of if-else if-else statement
+// if (examScore >= 90) {
+//     console.log("Grade: A");
+// } else if (examScore >= 80) {
+//     console.log("Grade: B");
+// } else if (examScore >= 70) {
+//     console.log("Grade: C");
+// } else {
+//     console.log("Grade: D or below");
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////
+
 // let age = 20;
 
 // if (age < 18) {
