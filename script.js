@@ -136,7 +136,6 @@
 // } while (num < 5);
 
 /////////////////////////////////////////////////////////////////
-
 // let count = 0;
 // while (count > 5) {
 //   console.log(count)
@@ -153,25 +152,80 @@
 //   console.log("Index:", i);
 // }
 
+// //////////  example ===================================
+// do while #############################
+// let password = prompt('Enter Your Password')
+// while(password !== 'marcello'){
+//     password = prompt('plz Enter Your correct Password')
+// }
+// alert('Go to home page')
+// ----------------------------------------------------
+// const setPassword = prompt('Set your password')
+// let password = prompt('Enter Your Password')
+
+// while(password !== setPassword){
+//     password = prompt('plz Enter Your correct Password')
+// }
+// alert('Go to home page')
+
+// do while #############################
+// const setPassword = prompt('Set your password');
+// let password = prompt('Enter Your Password')
+
+// do {
+//   password = prompt('plz Enter Your correct Password');
+// } while (password !== setPassword);
+
+// alert('Go to home page');
+
+// for loop #############################
+// const setPassword = prompt('Set your password');
+// let password = prompt('Enter Your Password')
+
+// for (; password !== setPassword;) {
+//   password = prompt('plz Enter Your correct Password')
+// }
+
+// alert('Go to home page');
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // functions
 
-// // regular function
-// function marcello() {
+// // regular function #############################
+// function marcello(a,b) {
+//   console.log(a+b);
 //   console.log("Marcello Tech");
 // }
 // marcello();
 
-// // return function
+// // return function #############################
 // function add(a, b) {
 //   return a + b;
 // }
 // console.log(add(3, 5)); // Outputs: 8
 
-// // Arrow function
+// function expression #############################
+// const add = function (a,b){
+//   return a+b;
+// }
+// console.log(add(3, 5));
+
+// // Arrow function #############################
 // const subtract = (a, b) => a - b;
 
 // console.log(subtract(10, 3)); // Outputs: 7
+
+// // callback function #############################
+// function addNumbers(x, y, callback) {
+//   let result = x * y;
+//   callback(result);
+// }
+
+// function showAddResult(result) {
+//   console.log("The result of addition is: " + result);
+// }
+
+// addNumbers(8, 4, showAddResult);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Creating an array
