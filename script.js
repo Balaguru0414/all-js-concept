@@ -235,7 +235,7 @@
 // console.log(fruits[0]); // Outputs: "apple"
 // console.log(fruits[2]); // Outputs: "orange"
 
-
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // DOM
 // Get elements by ID
 // const head = document.getElementById("head");
@@ -264,6 +264,17 @@
 // const newPara = document.createElement("p");
 // newPara.textContent = "This is a new paragraph.";
 // container.appendChild(newPara);
+// -------------------------------------------------------------
+// input = document.querySelector('.input')
+// btn = document.querySelector('.btn')
+// para = document.querySelector('.para')
+// para1 = document.querySelector('.para1')
+
+// btn.addEventListener('click',()=>{
+//     const value = input.value
+//     para.innerHTML = `<h1>innerHTML : ${value}</h1>`
+//     para1.textContent = `<h1>textContent : ${value}</h1>`
+// })
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // String methods
