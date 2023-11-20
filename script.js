@@ -210,11 +210,6 @@
 // }
 // console.log(add(3, 5));
 
-// // Arrow function #############################
-// const subtract = (a, b) => a - b;
-
-// console.log(subtract(10, 3)); // Outputs: 7
-
 // // callback function #############################
 // function addNumbers(x, y, callback) {
 //   let result = x * y;
@@ -226,6 +221,11 @@
 // }
 
 // addNumbers(8, 4, showAddResult);
+
+// // Arrow function #############################
+// const subtract = (a, b) => a - b;
+
+// console.log(subtract(10, 3)); // Outputs: 7
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Creating an array
@@ -321,6 +321,19 @@
 
 // console.log("Padded Number (Start):", paddedNumberStart); // Outputs: "00042"
 // console.log("Padded Number (End):", paddedNumberEnd); // Outputs: "42***"
+
+// create secret number ================================
+// function createSecretnumber(phoneNo) {
+//     const number = phoneNo + ''
+//     const first2number = number.slice(0,2);
+//     const last2number = number.slice(-2);
+
+//     const secretNumber = first2number.padEnd(number.length-2,'x') + last2number
+//     console.log(secretNumber)
+// }
+
+// createSecretnumber('9876543210')
+// createSecretnumber(9876543210)
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Array methods
