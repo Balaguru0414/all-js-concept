@@ -227,6 +227,10 @@
 
 // console.log(subtract(10, 3)); // Outputs: 7
 
+// exmaple ---------------
+// const average = (tamil,english,maths,science,socialscience) => (tamil+english+maths+science+socialscience) / 5
+// console.log(average(89,71,85,100,96))
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Creating an array
 // let fruits = ["apple", "banana", "orange", "grape"];
