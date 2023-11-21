@@ -299,6 +299,94 @@
 // createSecretnumber(9876543210)
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // Math methods
+
+// // Math.random
+// // Math.round
+// // Math.ceil
+// // Math.floor
+// // Math.trunc
+// // Math.abs
+// // Math.pow
+// // Math.sqrt
+// // Math.min
+// // Math.max
+
+// // Generating a random number between 0 (inclusive) and 1 (exclusive)
+// let randomNum = Math.random();
+// console.log("Random Number:", randomNum);
+
+// // Rounding a number to the nearest integer
+// let roundedNum = Math.round(4.7);
+// console.log("Rounded Number:", roundedNum);
+
+// // Ceil value of a number (smallest integer greater than or equal to the number)
+// let ceilValue = Math.ceil(3.2);
+// console.log("Ceil Value:", ceilValue);
+
+// // Floor value of a number (largest integer less than or equal to the number)
+// let floorValue = Math.floor(5.8);
+// console.log("Floor Value:", floorValue);
+
+// // Truncate the decimal part of a number
+// let truncatedNum = Math.trunc(9.75);
+// console.log("Truncated Number:", truncatedNum);
+
+// // Absolute value of a number
+// let absoluteValue = Math.abs(-7);
+// console.log("Absolute Value:", absoluteValue);
+
+// // Power of a number
+// let powerValue = Math.pow(2, 3);
+// console.log("Power Value:", powerValue);
+
+// // Square root of a number
+// let sqrtValue = Math.sqrt(25);
+// console.log("Square Root Value:", sqrtValue);
+
+// // Minimum value among multiple numbers
+// let minValue = Math.min(10, 5, 8, 12, 3);
+// console.log("Minimum Value:", minValue);
+
+// // Maximum value among multiple numbers
+// let maxValue = Math.max(15, 20, 7, 30, 25);
+// console.log("Maximum Value:", maxValue);
+
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// // Dates
+
+// // Get the current date
+// const currentDate = new Date();
+
+// console.log("Current Date:", currentDate);
+
+// // Get specific components of the date
+// const year = currentDate.getFullYear();
+// const month = currentDate.getMonth() + 1; // Note: months are 0-based
+// const day = currentDate.getDate();
+// const hours = currentDate.getHours();
+// const minutes = currentDate.getMinutes();
+// const seconds = currentDate.getSeconds();
+
+// console.log(`Year: ${year}`);
+// console.log(`Month: ${month}`);
+// console.log(`Day: ${day}`);
+// console.log(`Hours: ${hours}`);
+// console.log(`Minutes: ${minutes}`);
+// console.log(`Seconds: ${seconds}`);
+
+// // Manipulating dates
+// const tomorrow = new Date();
+// tomorrow.setDate(currentDate.getDate() + 1);
+
+// console.log("Tomorrow's Date:", tomorrow);
+
+// const nextWeek = new Date();
+// nextWeek.setDate(currentDate.getDate() + 7);
+
+// console.log("Date after one week:", nextWeek);
+
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Array methods
 
 // // length
@@ -387,60 +475,6 @@
 // numbers.sort((a,b)=>a+b)
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// // Math methods
-
-// // Math.random
-// // Math.round
-// // Math.ceil
-// // Math.floor
-// // Math.trunc
-// // Math.abs
-// // Math.pow
-// // Math.sqrt
-// // Math.min
-// // Math.max
-
-// // Generating a random number between 0 (inclusive) and 1 (exclusive)
-// let randomNum = Math.random();
-// console.log("Random Number:", randomNum);
-
-// // Rounding a number to the nearest integer
-// let roundedNum = Math.round(4.7);
-// console.log("Rounded Number:", roundedNum);
-
-// // Ceil value of a number (smallest integer greater than or equal to the number)
-// let ceilValue = Math.ceil(3.2);
-// console.log("Ceil Value:", ceilValue);
-
-// // Floor value of a number (largest integer less than or equal to the number)
-// let floorValue = Math.floor(5.8);
-// console.log("Floor Value:", floorValue);
-
-// // Truncate the decimal part of a number
-// let truncatedNum = Math.trunc(9.75);
-// console.log("Truncated Number:", truncatedNum);
-
-// // Absolute value of a number
-// let absoluteValue = Math.abs(-7);
-// console.log("Absolute Value:", absoluteValue);
-
-// // Power of a number
-// let powerValue = Math.pow(2, 3);
-// console.log("Power Value:", powerValue);
-
-// // Square root of a number
-// let sqrtValue = Math.sqrt(25);
-// console.log("Square Root Value:", sqrtValue);
-
-// // Minimum value among multiple numbers
-// let minValue = Math.min(10, 5, 8, 12, 3);
-// console.log("Minimum Value:", minValue);
-
-// // Maximum value among multiple numbers
-// let maxValue = Math.max(15, 20, 7, 30, 25);
-// console.log("Maximum Value:", maxValue);
-
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // DOM
 // Get elements by ID
 // const head = document.getElementById("head");
@@ -511,61 +545,27 @@
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // optional Chaning
-const hotel = {
-  openHours: {
-    mon: {
-      open: "9.00 am",
-      close: "8.30 pm",
-    },
-    fri: {
-      open: "10.00 am",
-      close: "7.30 pm",
-    },
-  },
-};
+// const hotel = {
+//   openHours: {
+//     mon: {
+//       open: "9.00 am",
+//       close: "8.30 pm",
+//     },
+//     fri: {
+//       open: "10.00 am",
+//       close: "7.30 pm",
+//     },
+//   },
+// };
 
-// 1
-if (hotel.openHours.wed) {
-  console.log(hotel.openHours.wed.open);
-} else {
-  console.log(hotel.openHours.wed);
-}
-// 2
-console.log(hotel.openHours.wed?.open);
-
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// // Dates
-
-// // Get the current date
-// const currentDate = new Date();
-
-// console.log("Current Date:", currentDate);
-
-// // Get specific components of the date
-// const year = currentDate.getFullYear();
-// const month = currentDate.getMonth() + 1; // Note: months are 0-based
-// const day = currentDate.getDate();
-// const hours = currentDate.getHours();
-// const minutes = currentDate.getMinutes();
-// const seconds = currentDate.getSeconds();
-
-// console.log(`Year: ${year}`);
-// console.log(`Month: ${month}`);
-// console.log(`Day: ${day}`);
-// console.log(`Hours: ${hours}`);
-// console.log(`Minutes: ${minutes}`);
-// console.log(`Seconds: ${seconds}`);
-
-// // Manipulating dates
-// const tomorrow = new Date();
-// tomorrow.setDate(currentDate.getDate() + 1);
-
-// console.log("Tomorrow's Date:", tomorrow);
-
-// const nextWeek = new Date();
-// nextWeek.setDate(currentDate.getDate() + 7);
-
-// console.log("Date after one week:", nextWeek);
+// // 1
+// if (hotel.openHours.wed) {
+//   console.log(hotel.openHours.wed.open);
+// } else {
+//   console.log(hotel.openHours.wed);
+// }
+// // 2
+// console.log(hotel.openHours.wed?.open);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
