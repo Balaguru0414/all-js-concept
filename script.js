@@ -240,47 +240,6 @@
 // console.log(fruits[2]); // Outputs: "orange"
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// DOM
-// Get elements by ID
-// const head = document.getElementById("head");
-// head.innerHTML = "hi";
-
-// // Get elements by tag name
-// const h2 = document.getElementsByTagName("h2");
-// h2[0].innerHTML = "Document object model";
-
-// // Get elements by class name
-// const para1 = document.getElementsByClassName("para");
-// para1[0].innerHTML = "hello";
-
-// // Use querySelector to get elements by CSS selector
-// const button = document.querySelector(".button");
-// const container = document.querySelector(".container");
-
-// // Add event listener to the button
-// button.addEventListener("click", function () {
-//   head.textContent = "Heading Changed!";
-//   container.style.backgroundColor = "blue";
-//   container.style.color = "white";
-// });
-
-// // Create a new element and append it to the container
-// const newPara = document.createElement("p");
-// newPara.textContent = "This is a new paragraph.";
-// container.appendChild(newPara);
-// -------------------------------------------------------------
-// input = document.querySelector('.input')
-// btn = document.querySelector('.btn')
-// para = document.querySelector('.para')
-// para1 = document.querySelector('.para1')
-
-// btn.addEventListener('click',()=>{
-//     const value = input.value
-//     para.innerHTML = `<h1>innerHTML : ${value}</h1>`
-//     para1.textContent = `<h1>textContent : ${value}</h1>`
-// })
-
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // String methods
 
 // //  Length
@@ -480,6 +439,47 @@
 // // Maximum value among multiple numbers
 // let maxValue = Math.max(15, 20, 7, 30, 25);
 // console.log("Maximum Value:", maxValue);
+
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DOM
+// Get elements by ID
+// const head = document.getElementById("head");
+// head.innerHTML = "hi";
+
+// // Get elements by tag name
+// const h2 = document.getElementsByTagName("h2");
+// h2[0].innerHTML = "Document object model";
+
+// // Get elements by class name
+// const para1 = document.getElementsByClassName("para");
+// para1[0].innerHTML = "hello";
+
+// // Use querySelector to get elements by CSS selector
+// const button = document.querySelector(".button");
+// const container = document.querySelector(".container");
+
+// // Add event listener to the button
+// button.addEventListener("click", function () {
+//   head.textContent = "Heading Changed!";
+//   container.style.backgroundColor = "blue";
+//   container.style.color = "white";
+// });
+
+// // Create a new element and append it to the container
+// const newPara = document.createElement("p");
+// newPara.textContent = "This is a new paragraph.";
+// container.appendChild(newPara);
+// -------------------------------------------------------------
+// input = document.querySelector('.input')
+// btn = document.querySelector('.btn')
+// para = document.querySelector('.para')
+// para1 = document.querySelector('.para1')
+
+// btn.addEventListener('click',()=>{
+//     const value = input.value
+//     para.innerHTML = `<h1>innerHTML : ${value}</h1>`
+//     para1.textContent = `<h1>textContent : ${value}</h1>`
+// })
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // objects
