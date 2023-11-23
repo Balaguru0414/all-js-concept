@@ -515,6 +515,20 @@
 //     para1.textContent = `<h1>textContent : ${value}</h1>`
 // })
 
+// create element - example ------------------------------
+// const container = document.getElementById("container");
+// const paragraph = document.createElement("p");
+// paragraph.textContent = "This is a dynamically created paragraph.";
+
+// container.append(paragraph);
+
+// Dark theme --------------------------------------------
+// const theme = document.querySelector(".dark");
+
+// theme.addEventListener("click", function () {
+//   document.body.classList.toggle("body");
+// });
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // objects
 
