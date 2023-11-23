@@ -724,6 +724,18 @@
 
 // console.log(fullNamesUpperCase);
 
+// =============================
+// const cities = [
+//   'trichy',
+//  'chennai',
+//  'madhurai',
+//  'thoothukudi'
+// ];
+
+// const allCity = cities.map(city => `${city.toUpperCase()}`);
+
+// console.log(allCity);
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // async
 
