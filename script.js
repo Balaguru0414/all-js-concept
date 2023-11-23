@@ -529,6 +529,23 @@
 //   document.body.classList.toggle("body");
 // });
 
+// whatapp like - code ------------------------------------
+// const btn = document.getElementById('send-button')
+//     const messageInput = document.getElementById('message-input');
+//     const messageList = document.getElementById('message-list');
+
+//     function sendMessage() {
+//         const message = messageInput.value;
+
+//         const newMessage = document.createElement('p');
+//         newMessage.textContent = message;
+//         messageList.appendChild(newMessage);
+
+//         messageInput.value = '';
+//     }
+
+//     btn.addEventListener('click',sendMessage)
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // objects
 
@@ -695,6 +712,17 @@
 // ];
 // let flattenedArray = nestedArray.flat();
 // console.log(flattenedArray);
+
+// -------------------------------
+// const persons = [
+//   { firstName: 'John', lastName: 'Doe' },
+//   { firstName: 'Jane', lastName: 'Smith' },
+//   { firstName: 'Bob', lastName: 'Johnson' }
+// ];
+
+// const fullNamesUpperCase = persons.map(person => `${person.firstName} ${person.lastName.toUpperCase()}`);
+
+// console.log(fullNamesUpperCase);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // async
