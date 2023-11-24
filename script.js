@@ -764,6 +764,31 @@
   //   clearInterval(setTime);
   // };
 
+// --------------------------------------------------
+// <p class="time">12 : 12 : 12</p>
+
+// const time = document.querySelector(".time");
+
+// setInterval(function () {
+//   const now = new Date();
+//   const hour = now.getHours();
+//   const min = now.getMinutes();
+//   const sec = now.getSeconds();
+
+//   // const hour = String(now.getHours()).padStart(2, "0");
+//   // const min = String(now.getMinutes()).padStart(2, "0");
+//   // const sec = String(now.getSeconds()).padStart(2, "0");
+
+//   // if (hour > 12) {
+//   //   time.textContent = `${String(hour - 12).padStart(
+//   //     2,
+//   //     "0"
+//   //   )} : ${min} : ${sec}`;
+//   // } else {
+//   time.textContent = `${hour} : ${min} : ${sec}`;
+//   // }
+// }, 1000);
+
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // API
 // Define the URL of the API you want to request
