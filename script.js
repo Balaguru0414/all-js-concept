@@ -713,17 +713,6 @@
 // let flattenedArray = nestedArray.flat();
 // console.log(flattenedArray);
 
-// -------------------------------
-// const persons = [
-//   { firstName: 'John', lastName: 'Doe' },
-//   { firstName: 'Jane', lastName: 'Smith' },
-//   { firstName: 'Bob', lastName: 'Johnson' }
-// ];
-
-// const fullNamesUpperCase = persons.map(person => `${person.firstName} ${person.lastName.toUpperCase()}`);
-
-// console.log(fullNamesUpperCase);
-
 // =============================
 // const cities = [
 //   'trichy',
@@ -735,6 +724,20 @@
 // const allCity = cities.map(city => `${city.toUpperCase()}`);
 
 // console.log(allCity);
+// ------------------------------------------
+// const products = [
+//   { name: 'iphone', price: 100000},
+//   { name: 'samsung', price: 60000 },
+//   { name: 'vivo', price: 50000 },
+//   { name: 'oppo', price: 55000 },
+//   { name: 'redmi', price: 70000 }
+// ];
+
+// const totalProductsName = products.map(product => `${product.name}`);
+// const totalPrice = products.reduce((accumulator, product) => accumulator + product.price, 0);
+
+// console.log('ProductsName:',totalProductsName)
+// console.log('Total Price:', totalPrice);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // async
@@ -808,6 +811,24 @@
 //   .catch((error) => {
 //     console.error("Error:", error);
 //   });
+
+// ------------------------------------------------------------------
+
+// const apiUrl = "https://v2.jokeapi.dev/joke/Dark?type=single";
+
+// function createJoke() {
+//   fetch(apiUrl)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       head.textContent = data.joke;
+//     })
+//     .catch((error) => {
+//       console.error("Error:", error);
+//     });
+// }
+
+// btn.addEventListener("click", createJoke);
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // Promise
