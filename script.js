@@ -7,7 +7,7 @@
 // var
 
 // {
-//   const a = 10;         // let
+//   const a = 10; // let
 //   // console.log(a);
 // }
 // console.log(a);
@@ -17,50 +17,6 @@
 // string , number , boolean , undefined , null , object
 
 // object - array , object , date
-
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// ========= Creating an array =========
-// let fruits = ["apple", "banana", "orange", "grape"];
-
-//  Accessing elements by index
-// console.log(fruits[0]); // Outputs: "apple"
-// console.log(fruits[2]); // Outputs: "orange"
-
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// ========= objects =========
-// const person = {
-//   firstName: "Marcello",
-//   lastName: "tech",
-//   age: 30,
-//   isStudent: false,
-// }
-// console.log(person.firstName);             // Outputs: "Marcello"
-// console.log(person["lastName"]);           // Outputs: "tech"
-
-// ========= Creating an object using object literal syntax =========
-// const person = {
-//   firstName: "Marcello",
-//   lastName: "tech",
-//   age: 30,
-//   isStudent: false,
-//   sayHello: function () {
-//     console.log("Hello, I'm " + this.firstName + " " + this.lastName);
-//   },
-// };
-
-// ========= Accessing object properties =========
-// console.log(person.firstName);           // Outputs: "Marcello"
-// console.log(person["lastName"]);         // Outputs: "tech"
-
-// ========= Modifying object properties =========
-// person.age = 31;
-// person.isStudent = true;
-
-// ========= Calling object methods =========
-// person.sayHello(); // Outputs: "Hello, I'm Marcello tech"
-
-// ========= Adding new properties to the object =========
-// person.nationality = "USA";
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ========= operators =========
@@ -79,16 +35,31 @@
 // console.log(a < b); // Less than
 // console.log(a >= b); // Greater than or equal to
 // console.log(a <= b); // Less than or equal to
+// console.log(a == b); // Equal to
 // console.log(a === b); // Equal to (strict equality)
 // console.log(a !== b); // Not equal to (strict inequality)
 
+// a = 10;
+// b = "10";
+// console.log(a == b);
+
 // ========= Assignment operators =========
 // let c = 15;
+
 // c += 3; // c = c + 3
+// console.log(c);
+
 // c -= 2; // c = c - 2
+// console.log(c);
+
 // c *= 4; // c = c * 4
+// console.log(c);
+
 // c /= 2; // c = c / 2
+// console.log(c);
+
 // c %= 5; // c = c % 5
+// console.log(c);
 
 // ========= Logical operators =========
 // const isTrue = true;
@@ -127,13 +98,13 @@
 
 // // Example of if-else if-else statement
 // if (examScore >= 90) {
-//     console.log("Grade: A");
+//   console.log("Grade: A");
 // } else if (examScore >= 80) {
-//     console.log("Grade: B");
+//   console.log("Grade: B");
 // } else if (examScore >= 70) {
-//     console.log("Grade: C");
+//   console.log("Grade: C");
 // } else {
-//     console.log("Grade: D or below");
+//   console.log("Grade: D or below");
 // }
 
 // -----------------------------------------------------------------------------
@@ -150,7 +121,7 @@
 
 // ========= Conditional (Ternary) operator =========
 // let n = 7;
-// let result = n % 2 === 0 ? "Even" : "Odd";
+// let result = n % 2 === 0 ? "Even" :  "Odd" ;
 // console.log(result);
 
 // ========= Using the switch statement =========
@@ -249,13 +220,6 @@
 
 // alert('Go to home page');
 
-// ********************** Excersice **********************
-// const fruits = ["Apple", "Banana", "Orange", "Grape", "Mango"];
-
-// for (let i = 0; i < fruits.length; i++) {
-//     console.log("Fruit:", fruits[i]);
-// }
-
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // functions
 
@@ -280,7 +244,7 @@
 
 // ========= callback function =========
 // function addNumbers(x, y, callback) {
-//   let result = x * y;
+//   let result = x + y;
 //   callback(result);
 // }
 
@@ -300,23 +264,36 @@
 // console.log(average(89,71,85,100,96))
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// ========= Creating an array =========
+// let fruits = ["apple", "banana", "orange", "grape"];
+
+//  Accessing elements by index
+// console.log(fruits[0]); // Outputs: "apple"
+// console.log(fruits[2]); // Outputs: "orange"
+
+// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // String methods
 
-// //  Length
-// //  replace
-// //  replaceAll
-// //  toUpperCase
-// //  toLowerCase
-// //  trim
-// //  padStart
-// //  padEnd
-// //  split
-// //  slice
+//  Length
+//  replace
+//  replaceAll
+//  toUpperCase
+//  toLowerCase
+//  trim
+//  padStart
+//  padEnd
+//  split
+//  slice
+//  charAt
 
 // const str = "Hello, World!";
 
 // ========= Length of the string =========
 // console.log(str.length); // Outputs: 13
+
+// const str = "Hello, world!";
+// const char = str.charAt(0); // Gets the character at index 0, which is 'H'
+// console.log(char); // Outputs: H
 
 // ========= Convert to uppercase and lowercase =========
 // console.log(str.toUpperCase()); // Outputs: HELLO, WORLD!
@@ -326,7 +303,7 @@
 // console.log(str.slice(7, -1)); // Outputs: World!
 
 // ========= Splitting a string into an array =========
-// console.log(str.split(", ")); // Outputs: ["Hello", "World!"]
+// console.log(str.split(",")); // Outputs: ["Hello", "World!"]
 
 // ========= Replacing a substring =========
 // console.log(str.replace("Hello", "Hi")); // Outputs: Hi, World!
@@ -339,7 +316,7 @@
 // console.log(str.repeat(3)); // Outputs: Hello, World!Hello, World!Hello, World!
 
 // const number = "42";
-// const paddedNumberStart = number.padStart(5, "0");
+// const paddedNumberStart = number.padStart(10, "*");
 // const paddedNumberEnd = number.padEnd(5, "*");
 
 // console.log("Padded Number (Start):", paddedNumberStart); // Outputs: "00042"
@@ -347,37 +324,39 @@
 
 // ========= create secret number =========
 // function createSecretnumber(phoneNo) {
-//     const number = phoneNo + ''
-//     const first2number = number.slice(0,2);
-//     const last2number = number.slice(-2);
+//   const number = phoneNo + "";
 
-//     const secretNumber = first2number.padEnd(number.length-2,'x') + last2number
-//     console.log(secretNumber)
+//   const first2number = number.slice(0, 2); // 98
+//   const last2number = number.slice(-2); // 10
+
+//   const secretNumber =
+//     first2number.padEnd(number.length - 2, "x") + last2number;
+//   console.log(secretNumber);
 // }
 
-// createSecretnumber('9876543210')
-// createSecretnumber(9876543210)
+// createSecretnumber("9876543210");
+// createSecretnumber(9876543210);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // // Math methods
 
-// // Math.random
-// // Math.round
-// // Math.ceil
-// // Math.floor
-// // Math.trunc
-// // Math.abs
-// // Math.pow
-// // Math.sqrt
-// // Math.min
-// // Math.max
+// Math.random
+// Math.round
+// Math.ceil
+// Math.floor
+// Math.trunc
+// Math.abs
+// Math.pow
+// Math.sqrt
+// Math.min
+// Math.max
 
 //  ========= Generating a random number between 0 (inclusive) and 1 (exclusive) =========
 // const randomNum = Math.random();
 // console.log("Random Number:", randomNum);
 
 // ========= Rounding a number to the nearest integer =========
-// const roundedNum = Math.round(4.7);
+// const roundedNum = Math.round(4.5);
 // console.log("Rounded Number:", roundedNum);
 
 // ========= Ceil value of a number (smallest integer greater than or equal to the number) =========
@@ -385,11 +364,11 @@
 // console.log("Ceil Value:", ceilValue);
 
 // ========= Floor value of a number (largest integer less than or equal to the number) =========
-// const floorValue = Math.floor(5.8);
+// const floorValue = Math.floor(-5.4);
 // console.log("Floor Value:", floorValue);
 
 // ========= Truncate the decimal part of a number
-// const truncatedNum = Math.trunc(9.75);
+// const truncatedNum = Math.trunc(-5.8);
 // console.log("Truncated Number:", truncatedNum);
 
 // ========= Absolute value of a number =========
@@ -405,7 +384,10 @@
 // console.log("Square Root Value:", sqrtValue);
 
 // // Minimum value among multiple numbers
-// let minValue = Math.min(10, 5, 8, 12, 3);
+// const array = [10, 54, 1, 54, 54, 87, 3, 6];
+// const minValue = Math.min(10, 5, 8, 12, 3);
+// const minValue1 = Math.min(...array);
+// console.log(minValue1);
 // console.log("Minimum Value:", minValue);
 
 // // Maximum value among multiple numbers
@@ -449,18 +431,18 @@
 //  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ========= Array methods =========
 
-// // length
-// // toString
-// // pop
-// // push
-// // shift
-// // unshift
-// // join
-// // concat
-// // splice
-// // slice
-// // reverse
-// // sort
+// length
+// toString
+// pop
+// push
+// shift
+// unshift
+// join
+// concat
+// splice
+// slice
+// reverse
+// sort
 
 // ========= Creating an array =========
 // const fruits = ["apple", "banana", "orange", "grape"];
@@ -506,24 +488,27 @@
 
 // ========= Concatenating arrays =========
 // const moreNumbers = [10, 11, 12];
-// const combinedNumbers = numbers.concat(moreNumbers);
-// console.log(combinedNumbers); // Outputs: [5, 3, 2, 7, 1, 6, 8, 10, 11, 12]
+// const num = [21, 22, 23];
+// const combinedNumbers = numbers.concat(moreNumbers, num);
+// console.log(combinedNumbers); // Outputs: [4, 2, 7, 1, 9, 10, 11, 12, 21, 22 ,23]
 
 // ========= Splicing an array (adding and removing elements) =========
-// numbers.splice(2, 2, 0, 4);
-// console.log(numbers); // Outputs: [5, 3, 0, 4, 1, 6, 8]
+// const numbers = [4, 2, 7, 1, 9];
+// const n1 = numbers.splice(2);
+// console.log(n1);
+// console.log(numbers);
 
 // ========= Creating a new array by slicing =========
 // const slicedArray = numbers.slice(2, 5);
-// console.log(slicedArray); // Outputs: [0, 4, 1]
+// console.log(slicedArray); //
 
 // ========= Reversing the array =========
 // numbers.reverse();
-// console.log(numbers); // Outputs: [8, 6, 1, 4, 0, 3, 5]
+// console.log(numbers); // [9, 1, 7, 2, 4]
 
 // ========= Sorting the array =========
 // numbers.sort();
-// console.log(numbers); // Outputs: [0, 1, 3, 4, 5, 6, 8]
+// console.log(numbers); // Outputs: [ 1, 2, 4, 7, 9 ]
 
 // sort - numbers
 // numbers.sort((a,b)=>{
@@ -607,6 +592,65 @@
 //     }
 
 //     btn.addEventListener('click',sendMessage)
+// ====================== Image Slider ===========================
+//  <div class="slider">
+//      <img id="sliderImage" src="image1.jpg" alt="Image Slider">
+//      <button id="prevButton">Previous</button>
+//      <button id="nextButton">Next</button>
+//  </div>
+//-----------------------------------------------------------------
+// const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+// let currentIndex = 0;
+
+// const sliderImage = document.getElementById("sliderImage");
+// const prevButton = document.getElementById("prevButton");
+// const nextButton = document.getElementById("nextButton");
+
+// function showImage(index) {
+//   sliderImage.src = images[index];
+// }
+
+// prevButton.addEventListener("click", () => {
+//   currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+//   showImage(currentIndex);
+// });
+
+// nextButton.addEventListener("click", () => {
+//   currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+//   showImage(currentIndex);
+// });
+
+// // Initialize the slider
+// showImage(currentIndex);
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// ========= objects =========
+
+// ========= Creating an object using object literal syntax =========
+// const person = {
+//   firstName: "Marcello",
+//   lastName: "tech",
+//   age: 30,
+//   isStudent: false,
+//   sayHello: function () {
+//     console.log(this);
+//     console.log("Hello, I'm " + this.firstName + " " + this.lastName);
+//   },
+// };
+// console.log(this);
+// ========= Accessing object properties =========
+// console.log(person.firstName); // Outputs: "Marcello"
+// console.log(person["lastName"]); // Outputs: "tech"
+
+// ========= Modifying object properties =========
+// person.age = 31;
+// person.isStudent = true;
+
+// ========= Calling object methods =========
+// person.sayHello(); // Outputs: "Hello, I'm Marcello tech"
+
+// ========= Adding new properties to the object =========
+// person.nationality = "USA";
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ========= optional Chaning =========
@@ -640,10 +684,11 @@
 // ========= Destructuring an array =========
 // const numbers = [1, 2, 3, 4, 5];
 
-// const [first, second, ...rest] = numbers;
+// const [first, second,,third] = numbers;
 
 // console.log(first);    // Outputs: 1
 // console.log(second);   // Outputs: 2
+// console.log(third);
 // console.log(rest);     // Outputs: [3, 4, 5]
 
 // ========= Destructuring an object =========
@@ -660,7 +705,7 @@
 // console.log(age); // Outputs: 30
 
 // ========= Destructuring with renaming =========
-// const { firstName: fName, lastName: lName } = person;
+// const { firstName : fName, lastName: lName } = person;
 
 // console.log(fName); // Outputs: "Marcello"
 // console.log(lName); // Outputs: "tech"
@@ -693,27 +738,28 @@
 
 // ========= Using map to create a new array by doubling each element =========
 // console.log("\map:");
-// const doubledNumbers = numbers.map((num) => num * 2);
+// const doubledNumbers = numbers.map((num) => num * 2); // [ 2, 4, 6, 8, 10, 12 ]
 // console.log(doubledNumbers);
+// console.log(numbers);
 
 // ========= Using filter to create a new array with even numbers =========
 // console.log("\nfilter:");
-// const evenNumbers = numbers.filter((num) => num % 2 === 0);
-// console.log(evenNumbers);
+// const filter = numbers.filter((num) => num > 3); // [4, 5, 6]
+// console.log(filter);
 
 // ========= Using reduce to calculate the sum of all numbers =========
 // console.log("\nreduce:");
-// const sum = numbers.reduce((acc, num) => acc + num, 0);
+// const sum = numbers.reduce((acc, num) => acc + num, 0); 6
 // console.log(sum);
 
 // ========= Using find to get the first even number =========
 // console.log("\nfind:");
-// const firstEven = numbers.find((num) => num % 2 === 0);
-// console.log(firstEven);
+// const find = numbers.find((num) => num === 3);
+// console.log(find);
 
 // ========= Using every to check if all numbers are even =========
 // console.log("\nevery:");
-// const allEven = numbers.every((num) => num % 2 === 0);
+// const allEven = numbers.every((num) => 0 < num);
 // console.log(allEven);
 
 // ========= Using some to check if there's at least one even number =========
@@ -733,47 +779,52 @@
 
 // ========= Using findIndex to find the index of the first even number =========
 // console.log("\nfindIndex:");
-// const evenIndex = numbers.findIndex((num) => num % 2 === 0);
-// console.log(evenIndex);
+// const findIndex = numbers.findIndex((num) => num > 3);
+// console.log(findIndex);
 
 // ========= Using flat to flatten a nested array =========
 // console.log("\nflat:");
 // const nestedArray = [
-//   [1, 2],
+//   [1, 2, [7, 8]],
 //   [3, 4],
 //   [5, 6],
 // ];
-// const flattenedArray = nestedArray.flat();
+// const flattenedArray = nestedArray.flat(2);
 // console.log(flattenedArray);
 
 // ============================= map - exmaple =============================
 // const cities = [
-//  'trichy',
-//  'chennai',
-//  'madhurai',
-//  'thoothukudi'
-//  'pudukkottai'
+//   "trichy",
+//   "chennai",
+//   "madhurai",
+//   "thoothukudi",
+//   "pudukkottai",
+//   "tirunelveli",
 // ];
 
-// const allCity = cities.map(city => `${city.toUpperCase()}`);
+// const allCity = cities.map((city) => `${city.toUpperCase()}`);
 
 // console.log(allCity);
 
 // ------------------------------------------
 
 // const products = [
-//   { name: 'iphone', price: 100000},
-//   { name: 'samsung', price: 60000 },
-//   { name: 'vivo', price: 50000 },
-//   { name: 'oppo', price: 55000 },
-//   { name: 'redmi', price: 70000 }
+//   { name: "iphone", price: 100000 },
+//   { name: "samsung", price: 60000 },
+//   { name: "vivo", price: 50000 },
+//   { name: "oppo", price: 55000 },
+//   { name: "redmi", price: 70000 },
 // ];
 
-// const totalProductsName = products.map(product => `${product.name}`);
-// const totalPrice = products.reduce((accumulator, product) => accumulator + product.price, 0);
+// const totalProductsName = products.map((product) => `${product.name}`);
 
-// console.log('ProductsName:',totalProductsName)
-// console.log('Total Price:', totalPrice);
+// const totalPrice = products.reduce(
+//   (accumulator, product) => accumulator + product.price,
+//   0
+// );
+
+// console.log("ProductsName:", totalProductsName);
+// console.log("Total Price:", totalPrice);
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ========= setTimeout  & clearTimeout =========
@@ -980,3 +1031,33 @@
 // }
 
 // btn.addEventListener("click", createJoke);
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+// ================== PROMISE ==================
+// const myPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Promise resolved!");
+//   }, 2000);
+// });
+
+// myPromise
+//   .then((message) => {
+//     console.log(message);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+// ================== ASYNC / AWAIT ==================
+
+// const myAsyncFunction = async () => {
+//     try {
+//         const message = await myPromise;
+//         console.log(message);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// };
+
+// myAsyncFunction();
