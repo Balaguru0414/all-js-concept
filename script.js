@@ -31,13 +31,13 @@
 // console.log(a % b); // Modulus (remainder)
 
 // ========= Comparison operators =========
-// console.log(a > b); // Greater than
-// console.log(a < b); // Less than
-// console.log(a >= b); // Greater than or equal to
-// console.log(a <= b); // Less than or equal to
-// console.log(a == b); // Equal to
-// console.log(a === b); // Equal to (strict equality)
-// console.log(a !== b); // Not equal to (strict inequality)
+console.log(a > b); // Greater than
+console.log(a < b); // Less than
+console.log(a >= b); // Greater than or equal to
+console.log(a <= b); // Less than or equal to
+console.log(a == b); // Equal to
+console.log(a === b); // Equal to (strict equality)
+console.log(a !== b); // Not equal to (strict inequality)
 
 // a = 10;
 // b = "10";
@@ -242,17 +242,19 @@
 // }
 // console.log(add(3, 5));
 
-// ========= callback function =========
-// function addNumbers(x, y, callback) {
-//   let result = x + y;
-//   callback(result);
+// ========= callback function  =========
+// function operate(a, b, callback) {
+//     callback(a, b);
 // }
 
-// function showAddResult(result) {
-//   console.log("The result of addition is: " + result);
+// function add(a, b) {
+//     console.log('Add :', a + b);
+// }
+// function sub(a, b) {
+//     console.log('Sub :', a - b);
 // }
 
-// addNumbers(8, 4, showAddResult);
+// operate(4, 5, add);
 
 // ========= Arrow function =========
 // const subtract = (a, b) => a - b;
@@ -592,6 +594,21 @@
 //     }
 
 //     btn.addEventListener('click',sendMessage)
+
+// ================== add image - code ==================
+// const fileInp = document.querySelector("#file-input");
+// const imageContainer = document.querySelector(".imageContainer");
+
+// fileInp.addEventListener("change", function () {
+//   const img = document.createElement("img");
+//   const file = fileInp.files[0];
+//   if (file) {
+//     const imageURL = URL.createObjectURL(file);
+//     img.src = imageURL;
+//   }
+
+//   imageContainer.appendChild(img);
+});
 // ====================== Image Slider ===========================
 //  <div class="slider">
 //      <img id="sliderImage" src="image1.jpg" alt="Image Slider">
