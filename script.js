@@ -31,13 +31,13 @@
 // console.log(a % b); // Modulus (remainder)
 
 // ========= Comparison operators =========
-console.log(a > b); // Greater than
-console.log(a < b); // Less than
-console.log(a >= b); // Greater than or equal to
-console.log(a <= b); // Less than or equal to
-console.log(a == b); // Equal to
-console.log(a === b); // Equal to (strict equality)
-console.log(a !== b); // Not equal to (strict inequality)
+// console.log(a > b); // Greater than
+// console.log(a < b); // Less than
+// console.log(a >= b); // Greater than or equal to
+// console.log(a <= b); // Less than or equal to
+// console.log(a == b); // Equal to
+// console.log(a === b); // Equal to (strict equality)
+// console.log(a !== b); // Not equal to (strict inequality)
 
 // a = 10;
 // b = "10";
@@ -224,11 +224,11 @@ console.log(a !== b); // Not equal to (strict inequality)
 // // functions
 
 // ========= regular function =========
-// function marcello(a,b) {
+// function fullName(a,b) {
 //   console.log(a+b);
 //   console.log("Marcello Tech");
 // }
-// marcello();
+// fullName();
 
 // ========= return function =========
 // function add(a, b) {
@@ -241,6 +241,15 @@ console.log(a !== b); // Not equal to (strict inequality)
 //   return a+b;
 // }
 // console.log(add(3, 5));
+
+// ========= Arrow function =========
+// const subtract = (a, b) => a - b;
+
+// console.log(subtract(10, 3)); // Outputs: 7
+
+// ========= exmaple =========
+// const average = (tamil,english,maths,science,socialscience) => (tamil+english+maths+science+socialscience) / 5
+// console.log(average(89,71,85,100,96))
 
 // ========= callback function  =========
 // function operate(a, b, callback) {
@@ -256,14 +265,158 @@ console.log(a !== b); // Not equal to (strict inequality)
 
 // operate(4, 5, add);
 
-// ========= Arrow function =========
-// const subtract = (a, b) => a - b;
+// ========= Recursion function  =========
+// ========= exmaple =========
+function countdown(n) {
+  // Print the current value of n
+  console.log(n);
 
-// console.log(subtract(10, 3)); // Outputs: 7
+  // stop if n is 1
+  if (n === 1) return;
+
+  // call countdown with n-1
+  countdown(n - 1);
+}
+countdown(5);
 
 // ========= exmaple =========
-// const average = (tamil,english,maths,science,socialscience) => (tamil+english+maths+science+socialscience) / 5
-// console.log(average(89,71,85,100,96))
+
+function sum(n) {
+  // if n is 1, return 1
+  if (n === 1) return 1;
+
+  // add n to the sum of numbers less than n
+  return n + sum(n - 1);
+}
+console.log(sum(3)); // Output: 6
+
+// ========= exmaple =========
+
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// ========= DOM =========
+// ========= Get elements by ID =========
+// const head = document.getElementById("head");
+// head.innerHTML = "hi";
+
+// ========= Get elements by tag name =========
+// const h2 = document.getElementsByTagName("h2");
+// h2[0].innerHTML = "Document object model";
+
+// ========= Get elements by class name =========
+// const para1 = document.getElementsByClassName("para");
+// para1[0].innerHTML = "hello";
+
+// ========= Use querySelector to get elements by CSS selector =========
+// const button = document.querySelector(".button");
+// const container = document.querySelector(".container");
+
+// ========= Add event listener to the button =========
+// button.addEventListener("click", function () {
+//   head.textContent = "Heading Changed!";
+//   container.style.backgroundColor = "blue";
+//   container.style.color = "white";
+// });
+
+// ========= Create a new element and append it to the container =========
+// const newPara = document.createElement("p");
+// newPara.textContent = "This is a new paragraph.";
+// container.appendChild(newPara);
+
+// -------------------------------------------------------------
+
+// const input = document.querySelector('.input')
+// const btn = document.querySelector('.btn')
+// const para = document.querySelector('.para')
+// const para1 = document.querySelector('.para1')
+
+// btn.addEventListener('click',()=>{
+//     const value = input.value
+//     para.innerHTML = `<h1>innerHTML : ${value}</h1>`
+//     para1.textContent = `<h1>textContent : ${value}</h1>`
+// })
+
+// ================== create element - example ==================
+// const container = document.getElementById("container");
+// const paragraph = document.createElement("p");
+// paragraph.textContent = "This is a dynamically created paragraph.";
+
+// container.append(paragraph);
+
+// ================== Dark theme ==================
+// const theme = document.querySelector(".dark");
+
+// theme.addEventListener("click", function () {
+//   document.body.classList.toggle("body");
+// });
+
+// ================== whatapp like - code ==================
+// const btn = document.getElementById('send-button')
+//     const messageInput = document.getElementById('message-input');
+//     const messageList = document.getElementById('message-list');
+
+//     function sendMessage() {
+//         const message = messageInput.value;
+
+//         const newMessage = document.createElement('p');
+//         newMessage.textContent = message;
+//         messageList.appendChild(newMessage);
+
+//         messageInput.value = '';
+//     }
+
+//     btn.addEventListener('click',sendMessage)
+
+// ================== add image - code ==================
+// const fileInp = document.querySelector("#file-input");
+// const imageContainer = document.querySelector(".imageContainer");
+
+// fileInp.addEventListener("change", function () {
+//   const img = document.createElement("img");
+//   const file = fileInp.files[0];
+//   if (file) {
+//     const imageURL = URL.createObjectURL(file);
+//     img.src = imageURL;
+//   }
+
+//   imageContainer.appendChild(img);
+// });
+// ====================== Image Slider ===========================
+//  <div class="slider">
+//      <img id="sliderImage" src="image1.jpg" alt="Image Slider">
+//      <button id="prevButton">Previous</button>
+//      <button id="nextButton">Next</button>
+//  </div>
+//-----------------------------------------------------------------
+// const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+// let currentIndex = 0;
+
+// const sliderImage = document.getElementById("sliderImage");
+// const prevButton = document.getElementById("prevButton");
+// const nextButton = document.getElementById("nextButton");
+
+// function showImage(index) {
+//   sliderImage.src = images[index];
+// }
+
+// prevButton.addEventListener("click", () => {
+//   currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+//   showImage(currentIndex);
+// });
+
+// nextButton.addEventListener("click", () => {
+//   currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+//   showImage(currentIndex);
+// });
+
+// // Initialize the slider
+// showImage(currentIndex);
 
 // // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ========= Creating an array =========
@@ -520,125 +673,6 @@ console.log(a !== b); // Not equal to (strict inequality)
 
 // numbers.sort((a,b)=>a-b)
 // numbers.sort((a,b)=>a+b)
-
-// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-// ========= DOM =========
-// ========= Get elements by ID =========
-// const head = document.getElementById("head");
-// head.innerHTML = "hi";
-
-// ========= Get elements by tag name =========
-// const h2 = document.getElementsByTagName("h2");
-// h2[0].innerHTML = "Document object model";
-
-// ========= Get elements by class name =========
-// const para1 = document.getElementsByClassName("para");
-// para1[0].innerHTML = "hello";
-
-// ========= Use querySelector to get elements by CSS selector =========
-// const button = document.querySelector(".button");
-// const container = document.querySelector(".container");
-
-// ========= Add event listener to the button =========
-// button.addEventListener("click", function () {
-//   head.textContent = "Heading Changed!";
-//   container.style.backgroundColor = "blue";
-//   container.style.color = "white";
-// });
-
-// ========= Create a new element and append it to the container =========
-// const newPara = document.createElement("p");
-// newPara.textContent = "This is a new paragraph.";
-// container.appendChild(newPara);
-
-// -------------------------------------------------------------
-
-// const input = document.querySelector('.input')
-// const btn = document.querySelector('.btn')
-// const para = document.querySelector('.para')
-// const para1 = document.querySelector('.para1')
-
-// btn.addEventListener('click',()=>{
-//     const value = input.value
-//     para.innerHTML = `<h1>innerHTML : ${value}</h1>`
-//     para1.textContent = `<h1>textContent : ${value}</h1>`
-// })
-
-// ================== create element - example ==================
-// const container = document.getElementById("container");
-// const paragraph = document.createElement("p");
-// paragraph.textContent = "This is a dynamically created paragraph.";
-
-// container.append(paragraph);
-
-// ================== Dark theme ==================
-// const theme = document.querySelector(".dark");
-
-// theme.addEventListener("click", function () {
-//   document.body.classList.toggle("body");
-// });
-
-// ================== whatapp like - code ==================
-// const btn = document.getElementById('send-button')
-//     const messageInput = document.getElementById('message-input');
-//     const messageList = document.getElementById('message-list');
-
-//     function sendMessage() {
-//         const message = messageInput.value;
-
-//         const newMessage = document.createElement('p');
-//         newMessage.textContent = message;
-//         messageList.appendChild(newMessage);
-
-//         messageInput.value = '';
-//     }
-
-//     btn.addEventListener('click',sendMessage)
-
-// ================== add image - code ==================
-// const fileInp = document.querySelector("#file-input");
-// const imageContainer = document.querySelector(".imageContainer");
-
-// fileInp.addEventListener("change", function () {
-//   const img = document.createElement("img");
-//   const file = fileInp.files[0];
-//   if (file) {
-//     const imageURL = URL.createObjectURL(file);
-//     img.src = imageURL;
-//   }
-
-//   imageContainer.appendChild(img);
-});
-// ====================== Image Slider ===========================
-//  <div class="slider">
-//      <img id="sliderImage" src="image1.jpg" alt="Image Slider">
-//      <button id="prevButton">Previous</button>
-//      <button id="nextButton">Next</button>
-//  </div>
-//-----------------------------------------------------------------
-// const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-// let currentIndex = 0;
-
-// const sliderImage = document.getElementById("sliderImage");
-// const prevButton = document.getElementById("prevButton");
-// const nextButton = document.getElementById("nextButton");
-
-// function showImage(index) {
-//   sliderImage.src = images[index];
-// }
-
-// prevButton.addEventListener("click", () => {
-//   currentIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-//   showImage(currentIndex);
-// });
-
-// nextButton.addEventListener("click", () => {
-//   currentIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-//   showImage(currentIndex);
-// });
-
-// // Initialize the slider
-// showImage(currentIndex);
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // ========= objects =========
